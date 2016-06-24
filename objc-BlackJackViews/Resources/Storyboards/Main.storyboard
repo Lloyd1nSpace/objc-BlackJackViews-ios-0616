@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Sua-84-URc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Sua-84-URc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Blackjack View Controller-->
@@ -30,6 +30,9 @@
                                 <state key="normal" title="Deal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="dealButtonTapped:" destination="Sua-84-URc" eventType="touchUpInside" id="y7J-4q-L0I"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXk-KS-sws" userLabel="horizontalBar">
                                 <rect key="frame" x="20" y="97" width="374" height="4"/>
@@ -41,7 +44,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIA-Ew-rRc" userLabel="houseScore">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIA-Ew-rRc" userLabel="houseScore">
                                 <rect key="frame" x="20" y="153" width="217" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="houseScore"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -108,14 +111,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJL-rq-1Zt" userLabel="houseWins">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wins: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJL-rq-1Zt" userLabel="houseWins">
                                 <rect key="frame" x="20" y="309" width="135" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="houseWins"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Losses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgO-bp-yhQ" userLabel="houseLosses">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Losses: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgO-bp-yhQ" userLabel="houseLosses">
                                 <rect key="frame" x="20" y="348" width="135" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="houseLosses"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -132,7 +135,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LA-xK-NBK" userLabel="playerScore">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LA-xK-NBK" userLabel="playerScore">
                                 <rect key="frame" x="20" y="435" width="217" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="playerScore"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -153,6 +156,9 @@
                                 <state key="normal" title="Hit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="hitButtonTapped:" destination="Sua-84-URc" eventType="touchUpInside" id="PL6-WD-siz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzP-D7-yWZ" userLabel="stay">
                                 <rect key="frame" x="334" y="420" width="60" height="60"/>
@@ -162,6 +168,9 @@
                                 <state key="normal" title="Stay">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="stayButtonTapped:" destination="Sua-84-URc" eventType="touchUpInside" id="9pQ-0g-qkZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv3-zq-Crv" userLabel="playerCard1">
                                 <rect key="frame" x="20" y="493" width="60" height="80"/>
@@ -215,14 +224,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqU-dA-iHc" userLabel="playerWins">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wins: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqU-dA-iHc" userLabel="playerWins">
                                 <rect key="frame" x="24" y="596" width="135" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="playerWins"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Losses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMg-Vn-GRn" userLabel="playerLosses">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Losses: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMg-Vn-GRn" userLabel="playerLosses">
                                 <rect key="frame" x="24" y="635" width="135" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="playerLosses"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -233,6 +242,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="dealCard" destination="ah4-9X-lXP" id="GAm-8q-6Xi"/>
+                        <outlet property="gameResult" destination="AFS-sU-bay" id="9lF-Js-7tN"/>
+                        <outlet property="hitPlayer" destination="Ra6-Lx-heH" id="eu0-wD-tAb"/>
+                        <outlet property="houseBlackjack" destination="o2I-uD-oQl" id="cDW-hf-Ror"/>
+                        <outlet property="houseBust" destination="pW6-R2-I3W" id="461-bm-Fum"/>
+                        <outlet property="houseCard1" destination="MB7-5b-QZM" id="VTc-40-1dP"/>
+                        <outlet property="houseCard2" destination="urs-V1-hLW" id="SnH-47-9Le"/>
+                        <outlet property="houseCard3" destination="nXQ-iJ-OuQ" id="yEj-b3-blc"/>
+                        <outlet property="houseCard4" destination="fl4-1V-860" id="ajy-7A-Ljp"/>
+                        <outlet property="houseCard5" destination="Ye3-Hg-JNH" id="6Lw-Aw-Xpg"/>
+                        <outlet property="houseLosses" destination="LgO-bp-yhQ" id="MWF-1F-7gO"/>
+                        <outlet property="housePlayer" destination="6mf-pB-D2z" id="gdw-Wu-BQi"/>
+                        <outlet property="houseScore" destination="IIA-Ew-rRc" id="fY2-D1-dEJ"/>
+                        <outlet property="houseStay" destination="bK6-Tk-d0e" id="x7Z-fJ-2Lm"/>
+                        <outlet property="houseWins" destination="dJL-rq-1Zt" id="mtr-na-90V"/>
+                        <outlet property="player" destination="yum-bz-Qhp" id="y8e-13-0tk"/>
+                        <outlet property="playerBlackjack" destination="WgU-EH-8FL" id="lun-I0-iWR"/>
+                        <outlet property="playerBust" destination="R89-KL-eMU" id="Chh-Jk-VrM"/>
+                        <outlet property="playerCard1" destination="Yv3-zq-Crv" id="bQS-Dw-c68"/>
+                        <outlet property="playerCard2" destination="E5c-72-u9U" id="jUI-bf-gjd"/>
+                        <outlet property="playerCard3" destination="kcx-GU-KeG" id="Ijy-te-Rx8"/>
+                        <outlet property="playerCard4" destination="utf-7Z-CIB" id="hq9-kI-rlR"/>
+                        <outlet property="playerCard5" destination="gCE-db-huL" id="j5L-yn-D3x"/>
+                        <outlet property="playerLosses" destination="BMg-Vn-GRn" id="hj5-3V-oBB"/>
+                        <outlet property="playerScore" destination="2LA-xK-NBK" id="Cz4-z9-8Ts"/>
+                        <outlet property="playerStay" destination="TmX-OF-3CS" id="UWH-xx-MSs"/>
+                        <outlet property="playerWins" destination="xqU-dA-iHc" id="loF-gj-vzU"/>
+                        <outlet property="stayPlayer" destination="dzP-D7-yWZ" id="yq2-Io-qgT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VwO-ay-0xR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
